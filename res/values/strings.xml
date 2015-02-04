@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PCBridge</string>
+    <string name="action_settings">Settings</string>
+    <string name="ip">IP</string>
+    <string name="use">URL for PC\'s browser:</string>
+    <string name="pasteFromClipboardbutton">Paste from Clipboard</string>
+    <string name="unicono"></string>
+    <string name="explicacionNoWifi">To Share content with PC</string>
+    <string name="explicacionNoWifi1">Connect to WIFI</string>
+    <string name="noCompartible">No content to share</string>
+    <string name="borrarCompartidoMensaje">Delete this element?</string>
+    <string name="borrarCompartidoHistorialMensaje">Delete history?</string>
+    <string name="si">Yes</string>
+    <string name="no">No</string>
+    <string name="historyButton">History</string>
+    <string name="basuraButton">Delete Historial</string>
+    <string name="noContent">There\'s no content on clipboard</string>
+    <string name="noContentHistory">There\'s no content on history</string>
+    <string name="action_compose">Menu</string>
+    <string name="copied_clipboard">Conten copied to Clipboard</string>
+    <string name="no_copied_clipboard">Can not copy to Clipboard :(</string>
+    <!--     <string name="pasteFromClipboardbutton">Paste\nfrom\nClipboard</string> -->
+
+</resources>

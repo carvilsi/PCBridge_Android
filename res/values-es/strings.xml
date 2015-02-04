@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PCBridge</string>
+    <string name="action_settings">Configuración</string>
+    <string name="ip">IP</string>
+    <string name="use">URL para el explorador web del PC:</string>
+    <string name="pasteFromClipboardbutton">Pegar del Portapapeles</string>
+    <string name="unicono"></string>
+    <string name="explicacionNoWifi">Para compartir con el PC</string>
+    <string name="explicacionNoWifi1">Conéctate a la WIFI</string>
+    <string name="noCompartible">No hay contenido a compartir</string>
+    <string name="borrarCompartidoMensaje">¿Borrar este compartido?</string>
+    <string name="borrarCompartidoHistorialMensaje">¿Borrar historial compartido?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="historyButton">Historial</string>
+    <string name="basuraButton">Borrar Historial</string>
+    <string name="noContent">Sin contenido en el portapapeles</string>
+    <string name="noContentHistory">Sin contenido en el historial</string>
+    <string name="action_compose">Menú</string>
+    <string name="copied_clipboard">Contenido copiado al Portapapeles</string>
+    <string name="no_copied_clipboard">No es posible copiar al Portapapeles :(</string>
+
+<!--     <string name="pasteFromClipboardbutton">Pegar\ndel\nPortapapeles</string> -->
+
+</resources>

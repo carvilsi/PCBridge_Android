@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- PCBridge v.2
+ *  
+ *  Share content from Android to PC
+ *  
+ *  Developed by o3r3
+ *  Carlos Villanueva
+ *  o3r3.tinc@gmail.com  
+ * -->
+
+<head>
+    <meta charset="utf-8" />
+    <title>PC Bridge</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.3.1.min.css">
+    <link rel="stylesheet" type="text/css" href="css/broser.android.bridge.css">
+    <script src="js/PCBridge.js"></script>
+
+    <!--        <script src="js/PCBridge.min.js"></script>-->
+
+    <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+    <script type="text/javascript" src="js/json2.min.js"></script>
+    <script type="text/javascript" src="js/l10n.min.js"></script>
+    <script type="text/javascript" src="loca/localizations.js"></script>
+
+
+    <link rel="shortcut icon" type="image/png" href="css/images/pcbridge.png"/>
+
+</head>
+
+<body>
+
+    <div data-role="page" id="home">  
+        <div align="center">
+                <img src="css/images/icon_horizontal_web.png" alt="image"/>
+        </div>
+        <h1 id="titulo" align="center">PC Bridge</h1>
+        <h2 id="status1" align="center" class="status1">DISCONNECTED</h2>
+        <div align="center">
+            <div class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal">
+                <div class="ui-controlgroup-controls">
+                    <button id="botonConectar"      type="button"  onClick="startConnection();" data-mini="true">Connect</button>
+                    <button id="botonRecibirNuevos" type="button"  onClick="sendMeNews();" data-mini="true">New Shared</button>
+                    <button id="botonRecibirViejos" type="button"  onClick="sendMeHist();"  data-mini="true">History Shared</button>
+                    <button id="botonBorrarSeleccionados"  type="button"  onClick="deleteHistSelectedBtt();"  data-rel="popup" data-transitio="pop" data-mini="true">Delete Selected</button>
+                    <button id="botonBorrarViejos"  type="button"  onClick="deleteHistBtt();"  data-rel="popup" data-transitio="pop" data-mini="true">Delete History</button>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="shared" align="center">
+            <ul data-role="listview" data-theme="c" id="listaCompartidos">  
+            </ul>    
+        </div>
+        <br />
+        <div id="secondButton" align="center">
+            <div class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal" data-role="controlgroup" data-type="horizontal">
+                <div class="ui-controlgroup-controls">
+                    <button id="botonConectar1"      type="button"  onClick="startConnection();" data-mini="true">Connect</button>
+                    <button id="botonRecibirNuevos1" type="button"  onClick="sendMeNews();" data-mini="true">New Shared</button>
+                    <button id="botonRecibirViejos1" type="button"  onClick="sendMeHist();"  data-mini="true">History Shared</button>
+                    <button id="botonBorrarSeleccionados1"  type="button"  onClick="deleteHistSelectedBtt();"  data-rel="popup" data-transitio="pop" data-mini="true">Delete Selected</button>
+                    <button id="botonBorrarViejos1"  type="button"  onClick="deleteHistBtt();"  data-rel="popup" data-transitio="pop" data-mini="true">Delete History</button>
+                </div>
+            </div>
+        </div>
+        <div data-role="popup" id="popupBasic" data-dismissible="false" align="center">
+            <h3 id="clearHist" class="ui-title">Clear History of PCBridge on Android?</h3>
+            <p id="undone">This action cannot be undone.</p>
+            <div data-role="content">
+                <button id="yes" type="button"  onClick="yesClearHistory();" data-inline="true" data-mini="true">Yes, clear it!</button>
+                <button id="no"  type="button"  onClick="noClearHistory();" data-inline="true" data-mini="true">No</button>
+            </div>
+        </div>
+        <div data-role="popup" id="popupDeleteSelected" data-dismissible="false" align="center">
+            <h3 id="delSel" class="ui-title">Delete selected items from history?</h3>
+            <p id="undone1">This action cannot be undone.</p>
+            <div data-role="content">
+                <button id="yes1" type="button"  onClick="yesClearSelected();" data-inline="true" data-mini="true">Yes, delete it!</button>
+                <button id="no"  type="button"  onClick="noClearSelected();" data-inline="true" data-mini="true">No</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
