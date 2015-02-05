@@ -33,11 +33,15 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.o3r3.db.LogDB;
+
 import java.io.IOException;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
+
+
 //import whitebyte.wifihotspotutils.WIFI_AP_STATE;
 import whitebyte.wifihotspotutils.WifiApManager;
 import static com.o3r3.browserandroidbridge.R.*;
@@ -94,37 +98,44 @@ public class PCBridgeActivity extends ActionBarActivity {
 		listView.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+			public void onItemClick(AdapterView<?> arg0, View arg1, final int arg2,
 					long arg3) {
 
-				final int pos = arg2;
-				AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-						context);
-				// set title
-				alertDialogBuilder.setTitle(app_name);
-				// set dialog message
-				alertDialogBuilder
-						.setMessage(string.borrarCompartidoMensaje)
-						.setCancelable(false)
-						.setPositiveButton(string.si,
-								new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog,
-											int id) {
-										PCBridgeActivity.this
-												.eliminarContenido(pos);
-									}
-								})
-						.setNegativeButton(string.no,
-								new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog,
-											int id) {
-										dialog.cancel();
-									}
-								});
-				// create alert dialog
-				AlertDialog alertDialog = alertDialogBuilder.create();
-				// show it
-				alertDialog.show();
+				runOnUiThread(new Runnable() {
+					
+					@Override
+					public void run() {
+						final int pos = arg2;
+						AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+								context);
+						// set title
+						alertDialogBuilder.setTitle(app_name);
+						// set dialog message
+						alertDialogBuilder
+								.setMessage(string.borrarCompartidoMensaje)
+								.setCancelable(false)
+								.setPositiveButton(string.si,
+										new DialogInterface.OnClickListener() {
+											public void onClick(DialogInterface dialog,
+													int id) {
+												PCBridgeActivity.this
+														.eliminarContenido(pos);
+											}
+										})
+								.setNegativeButton(string.no,
+										new DialogInterface.OnClickListener() {
+											public void onClick(DialogInterface dialog,
+													int id) {
+												dialog.cancel();
+											}
+										});
+						// create alert dialog
+						AlertDialog alertDialog = alertDialogBuilder.create();
+						// show it
+						alertDialog.show();
+						
+					}
+				});
 			}
 		});
 
