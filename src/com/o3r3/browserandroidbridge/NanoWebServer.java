@@ -94,7 +94,6 @@ public class NanoWebServer extends NanoHTTPD {
 			Map<String, String> files) {
 		try {
 			if (method.equals(Method.GET)){
-//				Log.i(PCBridgeActivity.tag, "estoy en la cosa del GET");
 				if (uri.contains(".jpg") || uri.contains(".JPG")) {
 						return new NanoHTTPD.Response(Status.PARTIAL_CONTENT, MIME_DEFAULT_BINARY,
 								readContentImage(uri.substring(1)));
@@ -163,7 +162,6 @@ public class NanoWebServer extends NanoHTTPD {
 		InputStream is = null;
 		try {
 			is = new FileInputStream(uri);
-			// Log.e(PCBridgeActivity.tag, "SO YO EL QUE DICE DICE :  " + uri);
 		} catch (Exception e) {
 			Log.e(PCBridgeActivity.tag, "read content Image:  " + e.toString());
 		}

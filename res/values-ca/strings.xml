@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PCBridge</string>
+    <string name="action_settings">Configuració</string>
+    <string name="ip">IP </string>
+    <string name="use">URL per al navegador web del PC:</string>
+    <string name="pasteFromClipboardbutton">Enganxa del porta-retalls</string>
+    <string name="unicono"></string>
+    <string name="explicacionNoWifi">Per compartir amb el PC</string>
+    <string name="explicacionNoWifi1">Connecta a la WIFI </string>
+    <string name="noCompartible">No hi ha contingut a compartir</string>
+    <string name="borrarCompartidoMensaje">Esborrar aquest compartit?</string>
+    <string name="borrarCompartidoHistorialMensaje">Esborra l\'historial compartit?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="historyButton">Històric</string>
+    <string name="basuraButton">Esborra Històric</string>
+    <string name="noContent">Sense contingut al porta-retalls</string>
+    <string name="noContentHistory">Sense contingut en l\'historial</string>
+    <string name="action_compose">Menú</string>
+    <string name="copied_clipboard">Contingut copiat al porta-retalls</string>
+    <string name="no_copied_clipboard">No es pot copiar al porta-retalls :(</string>
+
+    <!-- <string name="pasteFromClipboardbutton">Pegar\ndel\nPortapapeles</string> -->
+
+</resources>

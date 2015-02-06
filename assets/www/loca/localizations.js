@@ -136,5 +136,28 @@ String.toLocaleString({
 		"%yes1": "Si, borra",
 		"%no": "No",
 		"%noContent": "SIN CONTENIDO :("
+	},
+	"ca": {
+		"%titulo": "PC Bridge",
+		"%status1": "DESCONNECTAT",
+		"%status2": "CONNECTAT",
+		"%botonConectar": "Conetcar",
+		"%botonRecibirNuevos": "Nou Compartit",
+		"%botonRecibirViejos": "Històric",
+		"%botonBorrarSeleccionados": "Eliminar seleccionats",
+		"%botonBorrarViejos": "Esborrar Històric",
+		"%botonConectar1": "Conetcar",
+		"%botonRecibirNuevos1": "Nou Compartit",
+		"%botonRecibirViejos1": "Històric",
+		"%botonBorrarSeleccionados1": "Eliminar seleccionats",
+		"%botonBorrarViejos1": "Esborrar Històric",
+		"%clearHist": "Suprimeix l'historial de PCBridge?",
+		"%delSel": "Eliminar els elements seleccionats de l'històric?",
+		"%undone": "No es poden desfer els canvis.",
+		"%undone1": "No es poden desfer els canvis.",
+		"%yes": "Si, esborra",
+		"%yes1": "Si, esborra",
+		"%no": "No",
+		"%noContent": "SENSE CONTINGUT :("
 	}
 });
