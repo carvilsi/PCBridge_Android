@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.o3r3.browserandroidbridge"
     android:installLocation="preferExternal"
-    android:versionCode="15"
-    android:versionName="4.2" >
+    android:versionCode="16"
+    android:versionName="4.3" >
 
     <uses-sdk
         android:minSdkVersion="9"

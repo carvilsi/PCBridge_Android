@@ -337,7 +337,8 @@ function writeToScreen(message) {
                 }
             })
             } else {
-                lista.append('<li data-icon="false" style="text-align: center; letter-spacing:10px;">' + localize("%noContent") + '</li>');
+                // lista.append('<li data-icon="false" style="text-align: center; letter-spacing:10px;">' + 'NO CONTENT :(' + '</li>');
+                    lista.append('<li data-icon="false" style="text-align: center; letter-spacing:10px;">' + localize('%noContent') + '</li>');
                 divButton.hide();
             }    
         } catch (e) {

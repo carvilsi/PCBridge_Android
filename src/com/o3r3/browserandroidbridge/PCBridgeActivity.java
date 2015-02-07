@@ -140,6 +140,10 @@ public class PCBridgeActivity extends ActionBarActivity {
 		});
 
         /**
+         * 
+         * To copy the content of shared element to clipboard
+         * Waiting for long click
+         * 
          * Para poder copiar el compartido al portapapeles,
          * se espera un click largo
          */
