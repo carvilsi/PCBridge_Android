@@ -15,7 +15,7 @@ Now you can share links, content from other apps and text from clipboard.
 - TripAdvisor
 - Multiple images from Gallery
 - Video from Gallery
-*If you wish to share content from other applications please send us an email to o3r3.tinc@gmail.com
+
 
 ### How does PCBridge work?
 
@@ -34,7 +34,7 @@ If you want to damp the shared content to your PC you just need to open your pre
 -Click on “History Shared” to see previous shared contents
 -When the content has been sent to the computer they are deleted from the pending list on PCBridge.
 You can share content if your PC and Android are connected to the same Wi-Fi. You can also share the content using you Android phone as a Wi-Fi hotspot to connect you PC to the net.
-Tell us if you find an app that is not sharing well with PCBridge! Please, give notice here or write us to o3r3.tinc@gmail.com and we will try to solve it!
+
 
 ### Requirements:
 
@@ -45,7 +45,7 @@ It works on the following browsers:
 
 ## Run the source
 
-- Clone the proyect.
+- Clone the project.
 - In Eclipse, Import like "Existing Android Code Into Workspace".
 - In Eclipse, Project Properties, add as library the project "android-support-v7-appcompat"
 
