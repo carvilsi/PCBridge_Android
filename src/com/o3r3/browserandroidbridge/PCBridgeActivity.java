@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-//import whitebyte.wifihotspotutils.WIFI_AP_STATE;
+
 import whitebyte.wifihotspotutils.WifiApManager;
 import static com.o3r3.browserandroidbridge.R.*;
 import static com.o3r3.browserandroidbridge.R.string.app_name;
@@ -201,6 +201,8 @@ public class PCBridgeActivity extends ActionBarActivity {
 					setContenidoListView();
 				}
                 /*
+                 * Just receiving single image
+                 * 
                 En el caso de que recibo una imagen suelta
                  */
 				if (receivedType.startsWith("image/")) {
@@ -220,7 +222,11 @@ public class PCBridgeActivity extends ActionBarActivity {
 					setContenidoListView();
 				}
                 /*
+                 * 
+                 * Receiving just a single video
+                 * 
                 En el caso de que recibo un video suelto
+                
                  */
                 if (receivedType.startsWith("video/")) {
                     Uri imageURI = (Uri) intent.getParcelableExtra(Intent.EXTRA_STREAM);
@@ -236,7 +242,10 @@ public class PCBridgeActivity extends ActionBarActivity {
                     }
 
                     setContenidoListView();
-                }/*
+                }
+                /*
+                 * Receiving audio
+                 * 
                 En el caso de que recibo un audio suelto
                  */
                 if (receivedType.startsWith("audio/")) {
@@ -259,6 +268,10 @@ public class PCBridgeActivity extends ActionBarActivity {
 				if (receivedType.startsWith("message/rfc822")) {
 					Bundle bundle = intent.getExtras();
 					if (bundle != null) {
+						
+						// check content from bundle trying to find TEXT and SUBJECT
+						// This is foor TripAdvisor
+						
 						// comprobar el contenido del bundle en busca de los
 						// keys TEXT y SUBJECT
 						// esto es para TripAdvisor
@@ -286,6 +299,7 @@ public class PCBridgeActivity extends ActionBarActivity {
 					}
 				}
 			}
+			// Exception to shared element
 			// Esta es la excepciOn de un al compartido
 			catch (Exception ex) {
 				Toast.makeText(this, string.noCompartible, Toast.LENGTH_SHORT)
@@ -295,6 +309,8 @@ public class PCBridgeActivity extends ActionBarActivity {
 			setContenidoListView();
 		}
 		/*
+		 * 
+		 * 
 		 * Para los intents que me mandan varias cosas, como por ejemplo la cosa
 		 * de la galerIa
 		 */
@@ -321,6 +337,8 @@ public class PCBridgeActivity extends ActionBarActivity {
 				setContenidoListView();
 			}
             /*
+             * 
+             * 
             En el caso de que reciba una serie de vIdeos
              */
             if (receivedType.startsWith("video/")) {

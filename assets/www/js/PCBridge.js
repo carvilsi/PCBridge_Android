@@ -337,7 +337,6 @@ function writeToScreen(message) {
                 }
             })
             } else {
-                // lista.append('<li data-icon="false" style="text-align: center; letter-spacing:10px;">' + 'NO CONTENT :(' + '</li>');
                     lista.append('<li data-icon="false" style="text-align: center; letter-spacing:10px;">' + localize('%noContent') + '</li>');
                 divButton.hide();
             }    
@@ -497,14 +496,15 @@ function noClearSelected() {
 }
 
 function downloadImage(url) {
+    
             if (navigator.userAgent.indexOf('Firefox') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Firefox') + 8)) >= 3.6){//Firefox
                 window.open(window.location.origin + url,'_blank','resizable=yes,top=-245,width=250,height=250,scrollbars=no');
-            }else if (navigator.userAgent.indexOf('Chrome') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Chrome') + 7).split(' ')[0]) >= 15){//Chrome
+//                window.location.assign(window.location.origin + url);
+                
+            } else if (navigator.userAgent.indexOf('Chrome') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Chrome') + 7).split(' ')[0]) >= 15){//Chrome
                 window.open(window.location.origin + url,'_blank');
-                //esto.close();
-                window.close();
             }else if(navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Version') != -1 && parseFloat(navigator.userAgent.substring(navigator.userAgent.indexOf('Version') + 8).split(' ')[0]) >= 5){//Safari
-                window.location.reload();
+                window.location.assign(window.location.origin + url);
             }
 }
 

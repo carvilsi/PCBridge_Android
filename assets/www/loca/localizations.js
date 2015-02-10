@@ -155,9 +155,9 @@ String.toLocaleString({
 		"%delSel": "Eliminar els elements seleccionats de l'històric?",
 		"%undone": "No es poden desfer els canvis.",
 		"%undone1": "No es poden desfer els canvis.",
-		"% yes": "Si, esborra",
-		"% yes1": "Si, esborra",
-		"% no": "No",
-		"% noContent": "SENSE CONTINGUT :("
+		"%yes": "Si, esborra",
+		"%yes1": "Si, esborra",
+		"%no": "No",
+		"%noContent": "SENSE CONTINGUT :("
 	}
 });
