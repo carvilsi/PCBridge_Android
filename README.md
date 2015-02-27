@@ -1,7 +1,7 @@
 # PCBridge_Android
 Source code of "inglorious" App PCBridge @ [PlayStore](https://play.google.com/store/apps/details?id=com.o3r3.browserandroidbridge)
 
-You can easily share content and images from you Android to your PC via WIFI, so you can check later all the content from you PC.
+You can easily share content from others apps and images from you Android to your PC via WIFI, so you can check later all the content from you PC.
 
 
 ### What can you share?
